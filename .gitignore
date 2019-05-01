@@ -6,5 +6,7 @@
 ido.last
 network-security.data
 recentf
-.mc*
-custom.el
+/.mc-lists.el
+/custom.el
+*.elc
+\#*
