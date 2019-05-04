@@ -13,9 +13,9 @@
 ;; paredit
 (add-hook 'prog-mode-hook 'paredit-mode)
 
-;; anzu, Swiper show do the job to show number of matches
-;; (global-anzu-mode 1)
-
+;; recentf
+(add-hook 'after-init-hook 'recentf-mode)
+(setq recentf-max-saved-items 100)
 
 ;; move-dup
 (global-move-dup-mode)

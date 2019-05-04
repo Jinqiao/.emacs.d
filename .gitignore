@@ -10,3 +10,5 @@ recentf
 /custom.el
 *.elc
 \#*
+smex-items
+snippets/
