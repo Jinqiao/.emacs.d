@@ -11,7 +11,7 @@
 (add-hook 'prog-mode-hook 'show-paren-mode)
 
 ;; paredit
-;; (add-hook 'prog-mode-hook 'paredit-mode)
+(add-hook 'emacs-lisp-mode-hook 'paredit-mode)
 
 ;; move-dup
 (global-move-dup-mode)
