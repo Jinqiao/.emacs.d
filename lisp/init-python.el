@@ -1,12 +1,14 @@
 ;; elpy
 (elpy-enable)
 
-;; use ipython
 (setq python-shell-interpreter "ipython"
       python-shell-interpreter-args "-i --simple-prompt")
 
-;; disable indention highlight
-(add-hook 'elpy-mode-hook (lambda () (highlight-indentation-mode -1)))
+;; Use flycheck instead of flymake
+(when (load "flycheck" t t)
+  (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
+  (add-hook 'elpy-mode-hook 'flycheck-mode))
+
 
 ;; end
 (provide 'init-python)

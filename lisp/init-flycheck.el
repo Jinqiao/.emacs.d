@@ -6,7 +6,8 @@
 (with-eval-after-load 'flycheck
   (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
   ;; https://emacs.stackexchange.com/questions/10244/flycheck-could-not-find-file-under-load-path
-  (setq-default flycheck-emacs-lisp-load-path "inherit"))
+  (setq-default flycheck-emacs-lisp-load-path "inherit")
+  (setq flycheck-flake8rc "~/.config/flake8"))
 
 (provide 'init-flycheck)
 ;;; init-flycheck.el ends here

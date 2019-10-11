@@ -1,4 +1,5 @@
 ;; ivy, counsel, swiper
+;; also install smex to make M-x remember history
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
@@ -22,6 +23,9 @@
 (define-key ivy-minibuffer-map (kbd "RET") 'ivy-alt-done)
 (define-key ivy-minibuffer-map (kbd "<up>") 'ivy-previous-line-or-history)
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
+
+;; ivy-initial-inputs
+(setcdr (assoc 'counsel-M-x ivy-initial-inputs-alist) "")
 
 ;; end
 (provide 'init-ivy)
