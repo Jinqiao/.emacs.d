@@ -59,6 +59,10 @@
 (add-hook 'eshell-mode-hook
  (lambda () (setq show-trailing-whitespace nil)))
 
+;; save all backup files to ~/.emacs.d/backups
+;; https://stackoverflow.com/a/151946/4499942
+(setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
+
 ;; init-jq end
 (provide 'init-jq)
 
