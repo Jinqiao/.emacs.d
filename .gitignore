@@ -1,19 +1,24 @@
-/elpa
-/elpa-*
-/url
-/auto-save-list
-/backups
-ido.last
-network-security.data
-recentf
-/.mc-lists.el
-/custom.el
-*.elc
-\#*
-smex-items
-snippets/
+# /elpa
+# /elpa-*
+# /url
+# /auto-save-list
+# /backups
+# ido.last
+# network-security.data
+# recentf
+# /.mc-lists.el
+# /custom.el
+# *.elc
+# \#*
+# smex-items
+# snippets/
 
-# below will ignore all files
-# https://stackoverflow.com/a/3836976/4499942
+# https://stackoverflow.com/a/5250314/4499942
+# Ignore everything:
 *
-!/*.el
+
+# Except for these
+!.gitignore
+!custom.el
+!init.el
+!lisp/
