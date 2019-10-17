@@ -5,7 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (yasnippet-snippets undo-tree symbol-overlay smex protobuf-mode paredit multiple-cursors move-dup flycheck expand-region elpy counsel beacon))))
+    (yasnippet-snippets undo-tree typescript-mode symbol-overlay smex paredit omnisharp multiple-cursors move-dup expand-region elpy counsel beacon))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

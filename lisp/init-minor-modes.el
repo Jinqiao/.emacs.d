@@ -10,8 +10,15 @@
 ;; show paren mode
 (add-hook 'prog-mode-hook 'show-paren-mode)
 
+;; electric-pair
+(add-hook 'prog-mode-hook 'electric-pair-mode)
+
 ;; paredit
 (add-hook 'emacs-lisp-mode-hook 'paredit-mode)
+
+;; recentf
+(add-hook 'after-init-hook 'recentf-mode)
+(setq recentf-max-saved-items 100)
 
 ;; move-dup
 (global-move-dup-mode)
