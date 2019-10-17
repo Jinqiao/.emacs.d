@@ -1,24 +1,15 @@
-# /elpa
-# /elpa-*
-# /url
-# /auto-save-list
-# /backups
-# ido.last
-# network-security.data
-# recentf
-# /.mc-lists.el
-# /custom.el
-# *.elc
-# \#*
-# smex-items
-# snippets/
+/elpa
+/elpa-*
+/url
+/auto-save-list
+/backups
+ido.last
+network-security.data
+recentf
+/.mc-lists.el
+/custom.el
+*.elc
+\#*
+smex-items
+snippets/
 
-# https://stackoverflow.com/a/5250314/4499942
-# Ignore everything:
-*
-
-# Except for these
-!.gitignore
-!custom.el
-!init.el
-!lisp/
