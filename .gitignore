@@ -17,4 +17,6 @@ snippets/
 # https://stackoverflow.com/a/3836976/4499942
 *
 !/*.el
+
+*
 !/lisp/

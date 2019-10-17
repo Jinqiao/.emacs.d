@@ -14,6 +14,7 @@
 
 ;; load my init files
 (require 'better-defaults)
+(require 'init-font)
 (require 'init-local) ;; this file vary site by site
 (require 'init-elpa)
 (require 'init-company)
