@@ -1,6 +1,8 @@
 /elpa
 /elpa-*
 /url
+/eshell
+/server
 /auto-save-list
 /backups
 ido.last

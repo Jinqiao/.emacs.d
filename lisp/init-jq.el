@@ -67,8 +67,9 @@
  (lambda () (setq show-trailing-whitespace nil)))
 
 ;; save all backup files to ~/.emacs.d/backups
-;; https://stackoverflow.com/a/151946/4499942
+;; https://stackoverflow.com/a/151946
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
+(setq make-backup-files nil)
 
 ;; init-jq end
 (provide 'init-jq)

@@ -1,8 +1,8 @@
-;; prettify-symbols
-(add-hook 'after-init-hook 'global-prettify-symbols-mode)
-
 ;; undo-tree
 (add-hook 'after-init-hook 'global-undo-tree-mode)
+
+;; winner mode
+(winner-mode 1)
 
 ;; beacon mode
 (beacon-mode 1)

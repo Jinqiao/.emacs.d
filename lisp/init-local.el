@@ -1,10 +1,12 @@
-;; https://stackoverflow.com/a/18697151/4499942
-;; https://stackoverflow.com/a/912397/4499942
-;; (if (string= (getenv "USER") "a677356")
-;;     (progn
-;;       (setq url-proxy-services
-;;             '(("http" . "10.50.62.14:8080")))
-;;       ))
+;; below are required to download packages behind proxy
+;; https://stackoverflow.com/a/18697151
+;; https://stackoverflow.com/a/912397
+(if (string= (getenv "USER") "a677356")
+    (progn
+      (setq url-proxy-services
+            '(("http" . "10.50.62.14:8080")
+              ("https" . "10.50.62.14:8080")))
+      ))
 
 ;; fix cygwin cannot start server issue
 ;; https://stackoverflow.com/a/1313577/4499942

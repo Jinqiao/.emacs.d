@@ -12,5 +12,21 @@
 (setq locale-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
+;; prettify-symbols
+(setq prettify-symbols-unprettify-at-point t)
+(add-hook 'after-init-hook 'global-prettify-symbols-mode)
+
+;; customize symbols
+(add-hook 'prog-mode-hook
+          (lambda ()
+            (push '("<=" . ?≤) prettify-symbols-alist)
+            (push '(">=" . ?≥) prettify-symbols-alist)
+            ))
+
+;; fira code
+(require 'fira-code-mode)
+(if (eq window-system 'w32)
+    (add-hook 'prog-mode-hook 'fira-code-mode))
+
 ;; end
 (provide 'init-font)
