@@ -12,20 +12,23 @@
 ;; load-path contains dirs serched by "require"
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
+;; add to info path
+(add-to-list 'Info-directory-list "~/../../usr/share/info")
+
 ;; load my init files
 (require 'better-defaults)
 (require 'init-font)
 (require 'init-local) ;; this file vary site by site
 (require 'init-elpa)
 (require 'init-company)
-(require 'init-ivy)
 (require 'init-flycheck)
 (require 'init-python)
 (require 'init-jq)
 (require 'init-minor-modes)
 (require 'init-csharp)
 (require 'jq-lib)
-
+(require 'init-ivy)
+(require 'init-projectile)
 ;; packages to explore:
 ;; wgrep, diminish, scratch, command-log-mode
 ;; origami -> for text folding

@@ -24,8 +24,27 @@
 (define-key ivy-minibuffer-map (kbd "<up>") 'ivy-previous-line-or-history)
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
-;; ivy-initial-inputs
-(setcdr (assoc 'counsel-M-x ivy-initial-inputs-alist) "")
+;; https://emacs.stackexchange.com/a/36748
+(with-eval-after-load 'ivy
+  (push (cons 'swiper (cdr (assq t ivy-re-builders-alist)))
+        ivy-re-builders-alist)
+  (push (cons t 'ivy--regex-fuzzy)
+        ivy-re-builders-alist)
+  ;; ivy-initial-inputs https://emacs.stackexchange.com/a/38842
+  ;; below not work, use cusomize instead, also not work, seems a bug
+  ;; https://github.com/abo-abo/swiper/pull/2286
+  ;; (setcdr (assoc 'counsel-M-x ivy-initial-inputs-alist) "")
+  (setq ivy-initial-inputs-alist '((counsel-minor . "^+")
+                                  (counsel-package . "^+")
+                                  (counsel-org-capture . "^")
+                                  (counsel-M-x . "")
+                                  (counsel-describe-function . "^")
+                                  (counsel-describe-variable . "^")
+                                  (org-refile . "^")
+                                  (org-agenda-refile . "^")
+                                  (org-capture-refile . "^")
+                                  (Man-completion-table . "^")
+                                  (woman . "^"))))
 
 ;; end
 (provide 'init-ivy)

@@ -14,4 +14,9 @@ recentf
 \#*
 smex-items
 snippets/
-
+/elpy
+.cache/
+/projectile-bookmarks.eld
+/projectile.cache
+/request/
+/tramp
