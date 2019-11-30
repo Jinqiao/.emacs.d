@@ -19,14 +19,10 @@
 ;; Key bindings
 ;;----------------------------------------------------------------------------
 ;; kill current line
-(global-set-key (kbd "M-9") 'kill-whole-line)
-
-;; kill line backward (read help of C-k)
-(global-set-key (kbd "C-<backspace>")
-                (lambda ()
-                  (interactive)
-                  (kill-line 0)
-                  (indent-according-to-mode)))
+(global-set-key (kbd "M-9") (lambda () (interactive)
+                              (kill-whole-line)
+                              (previous-line)
+                              (move-end-of-line)))
 
 ;; scroll by arrow key;
 (global-set-key [up] (lambda () (interactive) (scroll-down 1)))

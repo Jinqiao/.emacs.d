@@ -1,20 +1,20 @@
 (eval-after-load
   'company
-  '(add-to-list 'company-backends #'company-omnisharp))
+  '(add-to-list 'company-backends 'company-omnisharp))
+
+(setq omnisharp-server-executable-path "/home/jq/.vscode-server/extensions/ms-vscode.csharp-1.21.5/.omnisharp/1.34.5/run")
 
 (defun my-csharp-mode-setup ()
   (omnisharp-mode)
-  (company-mode)
-  (flycheck-mode)
 
+  (c-set-style "ellemtel")
   (setq indent-tabs-mode nil)
   (setq c-syntactic-indentation t)
-  (c-set-style "ellemtel")
   (setq c-basic-offset 4)
   (setq truncate-lines t)
   (setq tab-width 4)
   (setq evil-shift-width 4)
-
+  
   ;csharp-mode README.md recommends this too
   ;(electric-pair-mode 1)       ;; Emacs 24
   ;(electric-pair-local-mode 1) ;; Emacs 25

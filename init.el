@@ -20,6 +20,7 @@
 (require 'init-font)
 (require 'init-local) ;; this file vary site by site
 (require 'init-elpa)
+(require 'init-projectile)
 (require 'init-company)
 (require 'init-flycheck)
 (require 'init-python)
@@ -28,7 +29,7 @@
 (require 'init-csharp)
 (require 'jq-lib)
 (require 'init-ivy)
-(require 'init-projectile)
+
 ;; packages to explore:
 ;; wgrep, diminish, scratch, command-log-mode
 ;; origami -> for text folding
