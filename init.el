@@ -13,7 +13,8 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 ;; add to info path
-(add-to-list 'Info-directory-list "~/../../usr/share/info")
+;; (add-to-list 'Info-directory-list "~/../../usr/share/info")
+;; (setq package-check-signature nil)
 
 ;; load my init files
 (require 'better-defaults)

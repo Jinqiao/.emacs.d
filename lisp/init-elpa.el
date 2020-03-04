@@ -11,7 +11,7 @@
 
 ;; install the missing packages
 ;; https://stackoverflow.com/a/10093312/4499942
-(setq package-list '(company beacon counsel elpy expand-region flycheck move-dup multiple-cursors symbol-overlay undo-tree paredit smex ))
+(setq package-list '(company beacon counsel elpy expand-region flycheck move-dup multiple-cursors symbol-overlay undo-tree paredit smex projectile))
 (dolist (package package-list)
   (unless (package-installed-p package)
     (package-install package)))

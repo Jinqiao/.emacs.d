@@ -2,7 +2,8 @@
   'company
   '(add-to-list 'company-backends 'company-omnisharp))
 
-(setq omnisharp-server-executable-path "/home/jq/.vscode-server/extensions/ms-vscode.csharp-1.21.5/.omnisharp/1.34.5/run")
+(setq omnisharp-server-executable-path "/home/jq/.vscode-server/extensions/ms-vscode.csharp-1.21.10/.omnisharp/1.34.10/run")
+(setq omnisharp-server-executable-path "/home/jq/.vscode-server/extensions/ms-vscode.csharp-1.21.11/.omnisharp/1.34.11/run")
 
 (defun my-csharp-mode-setup ()
   (omnisharp-mode)
