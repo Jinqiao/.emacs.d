@@ -2,7 +2,7 @@
 (elpy-enable)
 
 ;; python path
-(setq elpy-rpc-python-command "/home/jq/.local/bin/python")
+(setq elpy-rpc-python-command "~/local/bin/python")
 
 ;; use ipython
 (setq python-shell-interpreter "ipython"
