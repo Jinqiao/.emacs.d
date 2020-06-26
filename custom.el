@@ -3,9 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (projectile smex paredit undo-tree symbol-overlay multiple-cursors move-dup flycheck expand-region elpy counsel beacon company))))
+ '(woman-fill-column 100))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
