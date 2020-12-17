@@ -30,6 +30,7 @@
 (require 'init-csharp)
 (require 'jq-lib)
 (require 'init-ivy)
+(require 'init-lsp)
 
 ;; packages to explore:
 ;; wgrep, diminish, scratch, command-log-mode

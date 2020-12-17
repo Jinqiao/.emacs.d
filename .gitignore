@@ -9,7 +9,6 @@ ido.last
 network-security.data
 recentf
 /.mc-lists.el
-/custom.el
 *.elc
 \#*
 smex-items
