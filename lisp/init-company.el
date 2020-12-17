@@ -20,11 +20,14 @@
     (t (:inherit company-tooltip-selection)))))
 
 
-;; Use C-n instead of M-n
+;; change keys
 (with-eval-after-load 'company
+  ;; Use C-n instead of M-n
   (define-key company-active-map (kbd "M-n") nil)
   (define-key company-active-map (kbd "M-p") nil)
   (define-key company-active-map (kbd "C-n") #'company-select-next)
-  (define-key company-active-map (kbd "C-p") #'company-select-previous))
+  (define-key company-active-map (kbd "C-p") #'company-select-previous)
+  ;; TAB to select
+  (define-key company-active-map (kbd "TAB") 'company-complete-selection))
 
 (provide 'init-company)
