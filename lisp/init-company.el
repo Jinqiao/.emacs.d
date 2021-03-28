@@ -30,4 +30,11 @@
   ;; TAB to select
   (define-key company-active-map (kbd "TAB") 'company-complete-selection))
 
+;; use company-ispell in org mode
+;; https://github.com/company-mode/company-mode/issues/839#issuecomment-433045903
+(add-hook 'org-mode-hook
+          (lambda ()
+            (set (make-local-variable 'company-backends)
+                 '((company-dabbrev company-ispell)))))
+
 (provide 'init-company)

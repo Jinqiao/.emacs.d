@@ -2,6 +2,8 @@
 ;; Some basic preferences
 ;;----------------------------------------------------------------------------
 (setq-default
+ fill-column 80
+ org-loop-over-headlines-in-active-region t
  make-backup-files nil
  blink-cursor-interval 0.4
  bookmark-default-file (expand-file-name ".bookmarks.el" user-emacs-directory)

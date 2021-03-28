@@ -1,7 +1,3 @@
-(eval-after-load
-  'company
-  '(add-to-list 'company-backends 'company-omnisharp))
-
 (setq omnisharp-server-executable-path "/home/jq/.vscode-server/extensions/ms-vscode.csharp-1.21.10/.omnisharp/1.34.10/run")
 (setq omnisharp-server-executable-path "/home/jq/.vscode-server/extensions/ms-vscode.csharp-1.21.11/.omnisharp/1.34.11/run")
 
@@ -15,6 +11,9 @@
   (setq truncate-lines t)
   (setq tab-width 4)
   (setq evil-shift-width 4)
+
+  (set (make-local-variable 'company-backends)
+       '((company-dabbrev company-omnisharp)))
   
   ;csharp-mode README.md recommends this too
   ;(electric-pair-mode 1)       ;; Emacs 24
